@@ -1,0 +1,203 @@
+<html>
+<head>
+    <title>My Book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body bgcolor="violet">
+   <p>
+    	<center>
+    	<ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline;  margin-right: 10px"><a href="./home.html" 
+
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">HOME</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./about.html" 
+
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">ABOUT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./contact.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">CONTACT</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./service.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">SERVICES</a></li>
+        <li style="display: inline;  margin-right: 10px"><a href="./form.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">FORM</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./table.html" 
+            style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">TABLE</a></li>
+        
+        <li style="display: inline;  margin-right: 10px"><a href="./mybook.html" 
+        	style="padding: 10px;color: white;background-color: hotpink;text-decoration: none;margin-right: 15px;">MYBOOK</a></li>
+    </ul></center>
+	</p><ul>
+    <h1>DATABASE AND JAVA WITH ACADEMIC RECOMMENDATION SYSYTEM</h1>
+    <ol><h2><u><li>DATABASE</li></u></h2>
+        <p>Database name used: <b>academic recommendation sysytem</b></p>
+        <ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+            <ol><li><b>1.Admin Table</b></li>
+
+            <p>Admin table database structure This is table is table that will be only created by admin and will hold other system users apart from admin  will give them email and password that they will use to login and access the project or system, and also t used to register if she/he’s don’t have an account so once you must to create account in order to login and access or use the system.
+            Note: the created Admin will not have same ability and right in the system</p></br>
+
+            <li><b>2.User table</b></li>
+
+            <p>User Table database structure This table stores information about each user such as userid, username, email,gender. </p> </br>
+
+
+            <li><b>3.Course table </b></li>
+
+            <p>Course table  database structure This table Stores details or information about the courses, including courseid,coursename, coursecode and userid.</p></br>
+
+            <li><b>4.Rating table </b></li>
+
+            <p>Rating table database structure This table stores information about ratings including ratingid, userid,courseid,rating and review.</p></br>
+
+            <li><b>5.Recommendation table </b></li>
+
+            <p>Recommendation table  database structure This table Stores information about recommendations  including recommendationid, userid,recommendedcourseid.</p></br>
+
+            <li><b>6.Enrollment table </b></li></ol>
+
+            <p>Enrollment table database structure This table Stores details about the enrollments, including enrollmentid,courseid,userid,enrollmentdate,grade.</p></br>
+
+
+            
+           <h3><u><i><li>Attributes</li></i></u></h3>
+           <b>Attributes of Admin Table</b></br>
+    Here are the descriptions or purposes of the attributes/columns used in Admin table:</br>
+
+    <p><b><i>fname, lname:</i></b> The columns which are represents first name and last name of user.</br></p> 
+
+    <p><b><i>phone:</i></b> The column which are represents telephone number of user.</br></p>
+
+    <p><b><i>gender:</i></b> The column which are represents or store gender of user like female and male.</br></p> 
+
+    <p><b><i>martial_status:</i></b> The column which are represents  martial status of user like single,married,divorced,…..</br></p>  
+
+    <p><b><i>DoB:</i></b> The column which are represents Date of Birth of user.</br></p>
+
+    <p><b><i>Email:</i></b> The column which are represents Email of given user.</br></p>
+
+    <p><b><i>Password:</i></b> The column which are represents  password of the user.</br></p>
+
+
+                    <b>Attributes of User Table</b></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in User table:</br>
+
+
+<p><b><i>userid:</i></b> The column which are represents  id of user which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Product table.</br></p>
+
+<p><b><i>username:</i></b> The column which are represents  the name of the user like John.</p></br>
+
+<p><b><i>Email:</i></b> The column which are represents  the email  of the user.</br></p>
+
+<p><b><i>Gender:</i></b> The columns which are represents  the gender of the user may be female or male .</br></p>
+
+
+                    <b>Attributes of Course Table</b></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Course table:</br>
+
+
+
+<p><b><i>courseid:</i></b> The column which are represents  id of the course which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of the course table.</p></br>
+
+<p><b><i>userid:</i></b> The column which are represents  id of the user which  is references to the user  table value called FOREIGN KEY.  It is a column of user table  which has relationship between course table.</p></br>
+
+<p><b><i>coursename:</i></b> The column which are represents  the name of the course like web development.</p></br>
+
+<p><b><i>coursecode:</i></b> The column which are represents  the code of the course.</p></br>
+
+
+
+                    <b>Attributes of Rating Table</b></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Rating table:</br>
+
+<p><b><i>ratingid:</i></b> The column which are represents  id of the rating which is unique value called PRIMARY KEY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of the rating table.</p></br>
+
+
+<p><b><i>userid:</i></b> The column which are represents  id of the user which  is references to the user  table value called FOREIGN KEY.  It is a column of user table  which has relationship between rating table.</p></br>
+
+<p><b><i>courseid:</i></b> The column which are represents  id of the course which  is references to the course  table value called FOREIGN KEY.  It is a column of course table  which has relationship between rating table.</p></br>
+
+<p><b><i>rating:</i></b> The column which are represents the ranks of users based on their perfomances like 4 or 5.</p></br>
+
+<p><b><i>review:</i></b> The column which represents comments on the perfomance of the user like Great .</p></br>
+
+
+                    <b>Attributes of Recommendation Table</b></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in Recommendation table:</br>
+
+
+<p><b><i>recommendationd:</i></b> The column which are represents  id of the recommendation which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of the recommendation  table.</p></br>
+
+
+<p><b><i>userid:</i></b> The column which are represents  id of the user which  is references to the user  table value called FOREIGN KEY.  It is a column of user table  which has relationship between recommendation table.</p></br>
+
+<p><b><i>recommendedcourseid:</i></b> The column which represents the id of the recommended course like 2</p></br>
+
+
+                    <b>Attributes of Enrollment Table</b></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in Enrollment table:</br>
+
+
+<ol type="i"><li><p><b><i>enrollmentid:</i></b> The column which are represents  id of the enrollment  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of enrollment table.</p></br></li>
+
+<li><p><b><i>courseid:</i></b> The column which are represents  id of the course which  is references to the course  table value called FOREIGN KEY.  It is a column of course table  which has relationship between enrollment  table.</p></br></li>
+
+<li><p><b><i>userid:</i></b> The column which are represents  id of the user which  is references to the user  table value called FOREIGN KEY.  It is a column of user table  which has relationship between enrollment  table.</p></br></li>
+
+<li><p><b><i>enrollmentdate:</i></b> The column which represents  the date of the enrollment.</p></br></li>
+
+<li><p><b><i>grade:</i></b> The column which are represents  the level of perfomance using letters like A.</p></br></li>
+</ol>
+ 
+
+
+
+        </ul>
+        <h2><u><li>JAVA</li></u></h2>
+        
+        <ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+              <b>Introduction</b><br>
+ <p> In this chapter I will be describing how powerful general purpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system. </p><br>
+ 
+    <b>Tools used to develop this system in java programming</b><br>
+
+<p><b>Eclipse IDE:</b> an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and was the most popular. </p><br>
+
+<p><b>JAR stands for Java Archive:</b>  It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components. </p><br>
+
+                          <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+<b><h4>User form</h4></b></br>
+<img src="Userform.png" width=1000 height=300><br><br><br><br><br>
+
+<b><i><h4>Course Form</h4></i></b></br>
+<img src="Courseform.png" width=1000 height=300><br><br><br><br><br>
+
+<b><i>Rating Form</i></b></br>
+<img src="Ratingform.png" width=1000 height=300><br><br><br><br><br>
+
+<b><i>Enrollment Form</i></b></br>
+<img src="Enrollmentform.png" width=1000 height=300><br><br><br><br><br>
+
+<b><i>Recommendation Form</i></b></br>
+<img src="Recommendationform.png" width=1000 height=300><br><br><br><br><br>
+
+
+        </ul>
+        
+    </ol>
+    <marquee><u><i><h2 style="color: white;">Prepared By</i></u>:   UWUMUGISHA BEULA</h2></marquee>
+    </body>
+    </html>
